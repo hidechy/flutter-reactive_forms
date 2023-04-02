@@ -124,7 +124,7 @@ class ValidateDatePickTextField extends StatelessWidget {
         ? dateTime ?? DateTime(now.year - 30, now.month)
         : dateTime ?? now;
     final pickedDate = await showDatePicker(
-      locale: const Locale('ja'),
+//      locale: const Locale('ja'),
       context: context,
       initialDate: initialDate,
       firstDate: now.add(Duration(days: -365 * firstYear)),
